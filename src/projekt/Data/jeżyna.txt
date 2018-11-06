@@ -1,0 +1,16 @@
+﻿Witamina C - 21.0;
+Tiamina - 0.020; 
+Ryboflawina - 0.026; 
+Niacyna - 0.646 ;
+Witamina B6  - 0.030; 
+Kwas foliowy - 0.025 ;
+Witamina A - 0.011 ;
+Witamina E -  0.00117; 
+Witamina K - 0.0198 ;
+Wapń - 29.0 ;
+Żelazo - 0.62;  
+Magnez - 20.0 ;
+Fosfor - 22.0  ;
+Potas - 162.0 ;
+Sód - 1.0  ;
+Cynk - 0.53;

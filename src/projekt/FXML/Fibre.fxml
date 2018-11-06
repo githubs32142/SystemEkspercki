@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="900.0" styleClass="background"
+            stylesheets="@../CSS/Factor.css" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.FibreTest">
+    <children>
+        <VBox layoutY="-1.0" prefHeight="658.0" prefWidth="100.0" style="-fx-background-color: #2c62b5;">
+            <children>
+                <ImageView fitHeight="69.0" fitWidth="69.0" onMouseClicked="#closeWindow" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../Resource/close.png"/>
+                    </image>
+                    <VBox.margin>
+                        <Insets left="15.0" top="20.0"/>
+                    </VBox.margin>
+                </ImageView>
+            </children>
+        </VBox>
+        <ListView fx:id="product" layoutX="114.0" layoutY="147.0" onMouseClicked="#productClicked" prefHeight="464.0"
+                  prefWidth="343.0" styleClass="box"/>
+        <ListView fx:id="addedProduct" layoutX="549.0" layoutY="147.0" onMouseClicked="#addedProductClicked"
+                  prefHeight="464.0" prefWidth="343.0" styleClass="box">
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#remove" text="Usuń"/>
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </ListView>
+        <Label layoutX="114.0" layoutY="109.0" prefHeight="30.0" prefWidth="173.0" text="Lista produktów"/>
+        <Label layoutX="579.0" layoutY="109.0" text="Dodane przez Ciebie:"/>
+        <TextField fx:id="weight" layoutX="243.0" layoutY="27.0" prefHeight="27.0" prefWidth="163.0"/>
+        <TextField fx:id="productName" layoutX="243.0" layoutY="57.0" prefHeight="27.0" prefWidth="163.0"/>
+        <Label layoutX="159.0" layoutY="25.0" text="Waga:"/>
+        <Label layoutX="88.0" layoutY="55.0" text="Nazwa produktu:"/>
+        <Button layoutX="451.0" layoutY="32.0" mnemonicParsing="false" onAction="#add" styleClass="btn" text="Dodaj"/>
+        <Label layoutX="389.0" layoutY="31.0" prefHeight="30.0" prefWidth="34.0" text="g"/>
+        <ComboBox fx:id="sort" layoutX="250.0" layoutY="112.0" onAction="#sortProduct" prefWidth="150.0"/>
+        <Button layoutX="443.0" layoutY="110.0" mnemonicParsing="false" onAction="#makeTest" styleClass="btn"
+                text="Wykonaj test"/>
+        <Button fx:id="removeButton" layoutX="454.0" layoutY="70.0" mnemonicParsing="false" onAction="#removeFibre"
+                styleClass="btn" text="Usuń"/>
+        <Label fx:id="sum" layoutX="527.0" layoutY="620.0" prefHeight="30.0" prefWidth="245.0" styleClass="lbl"
+               text="Suma: "/>
+        <Label layoutX="549.0" layoutY="75.0" text="Wprowadź pokarm który zjadasz dziennie."/>
+    </children>
+</AnchorPane>

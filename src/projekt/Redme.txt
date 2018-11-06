@@ -1,0 +1,65 @@
+Wersja 0.2.7 04.05.17
+Dodano nowe funkcjonalności.
+Wersja 0.2.6 04.05.17
+ Zmieniono wygląd trzeciego okna (licząc od logowania).
+Wersja 0.2.5 03.05.17
+ Zmieniono wygląd drugiego okna (licząc od logowania).
+Wersja 0.2.4 02.05.17
+Dodano splash screen.
+Wersja 0.2.3 01.05.17
+Dodno test na dietę(bez reguł).
+Użyto wyrażeń reguralnych w celu sprawdzenia e-mail oraz imienia i nazwiska
+Wersja 0.2.2 30.04.17
+Poprawiono działanie systemu, uzupełnono braki
+Wersja 0.2.1 28.04.17
+Dodano opcje w oknie rak w rodzinie
+Wersja 0.2.0 27.04.17
+Dodano okno rak w rodzinie
+Wersja 0.1.9 23.04.17
+Odświeżono wygląd
+Wersja 0.1.8 23.04.17
+Poprawiono błędy w regułasz, poprawiono wyświetlanie danych.
+Wersja 0.1.7 23.04.17
+Poprawiono błędy w odczycie danych
+Wersja 0.1.6 21.04.17
+Poprawiono Reguły (Brak błonnika)
+Dodano Drag and Drop dla okna FactorWindow
+Wersja 0.1.5 20.04.17
+Dodano test Poprawion test Brak błonnika
+Wersja 0.1.4 17.04.17
+Dodano test Solarium.
+Wersja 0.1.3 16.04.17
+Dodano test Brak błonnika (prototyp).
+Poprawiono błędy.
+Wersja 0.1.2 14.04.17
+Dodano test Menopauza.
+Wersja 0.1.1 13.04.17
+Dodano 2 nowe testy Radioterapia oraz Promieniowanie jonizujące
+Wersja 0.1.0 07.04.17
+Niewielkie zmiany w plikach html.
+Wersja 0.0.9 07.04.17
+Dodanie testu Palenie papierosów czyli SmokingTest i smoking.clp .
+Wersja 0.0.8 06.04.17
+Podstawowe zmiany wykonane na formularzu firstWindow .
+Wersja 0.0.7 05.04.17
+Dodano fxml-a Czynniki w rodzienie.
+Wersja 0.0.6 02.04.17
+Dodano czynniki ryzyka 11 czynników.
+Zmieniono reguły w  pliku audit.clp (Podzielono na kategorie )
+Wersja 0.0.5 31.03.17
+Wykonano wyświetlanie objawu po kliknięciu na objaw.
+Wersja 0.0.4 30.03.17
+Połączono formularze FirstWindow i FactorWindow
+Dodano pliki html który pozwala na wyświetlanie objawów
+Wersja 0.0.3 29.03.17
+Dodano formularz Czynników ryzyka.
+Utworzono nową klasę Person
+Wersja 0.0.2 28.03.17
+Dodano formularz wprowadzania danych.
+Wersja 0.0.1
+Dodano :
+Zmieniono reguły w  pliku audit.clp 
+Wersja 0.0.0
+Dodano :
+Formularz test audit
+Dodano reguły do  pliku audit.clp 

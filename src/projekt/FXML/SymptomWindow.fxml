@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="650.0" prefWidth="900.0" styleClass="background" stylesheets="@../CSS/Fact.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.SymptomWindowController">
+    <children>
+        <JFXListView fx:id="symptoms" layoutX="72.0" layoutY="144.0" onDragDetected="#symptomsDragDetected" onDragDropped="#symptomsDragDropped" onDragEntered="#symptomsDragEntered" onDragExited="#symptomsDragExited" onDragOver="#symptomsDragOver" prefHeight="461.0" prefWidth="288.0" showTooltip="true" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="72.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXListView>
+        <ProgressBar layoutX="78.0" layoutY="660.0" prefHeight="14.0" prefWidth="570.0" progress="0.5" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="264.0">
+            <effect>
+                <Blend />
+            </effect>
+        </ProgressBar>
+        <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" prefHeight="687.0" prefWidth="66.0">
+            <children>
+                <VBox fx:id="box" maxWidth="305.0" minWidth="20.0" prefHeight="687.0" prefWidth="110.0" style="-fx-background-color: #2b579a;">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#undoClick" prefHeight="40.0" prefWidth="0.0" stylesheets="@../CSS/buttonCircle.css">
+                            <graphic>
+                                <ImageView fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Resource/arrowLeft.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets left="60.0" top="40.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </JFXDrawer>
+        <Label layoutX="151.0" layoutY="43.0" prefHeight="35.0" prefWidth="586.0" styleClass="lbl" text="Wybierz objawy, które występują u Ciebie przez co najmniej 3 miesiące!" textAlignment="CENTER" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="43.0" />
+        <Label layoutX="123.0" layoutY="109.0" prefHeight="30.0" prefWidth="173.0" styleClass="lbl2" text="Lista objawów:" AnchorPane.leftAnchor="123.0" />
+        <Label layoutX="612.0" layoutY="109.0" styleClass="lbl2" text="Twoje objawy:" AnchorPane.rightAnchor="140.0" />
+        <HBox layoutX="763.0" layoutY="2.0" prefHeight="0.0" prefWidth="140.0" stylesheets="@../CSS/winDec.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#fullScreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-fullscreen">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#minimalizeSscreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-minimize">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#maximalizeSscreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-maximize">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#closeeSscreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-close">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </HBox>
+        <Label layoutX="645.0" layoutY="651.0" styleClass="lbl" text="Krok 2/4" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="148.0" />
+        <JFXHamburger fx:id="hamburger" layoutX="846.0" layoutY="50.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXHamburger>
+        <JFXListView fx:id="addedSymptoms" layoutX="526.0" layoutY="144.0" onDragDetected="#addedSymptomsDragDetected" onDragDropped="#addedSymptomsDragDropped" onDragEntered="#addedSymptomsDragEntered" onDragExited="#addedSymptomsDragExited" onDragOver="#addedSymptomsDragOver" prefHeight="461.0" prefWidth="288.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXListView>
+        <JFXButton fx:id="add" layoutX="408.0" layoutY="315.0" onAction="#addSymptom" prefHeight="29.0" prefWidth="72.0" styleClass="btn" text="&gt;&gt;" AnchorPane.leftAnchor="408.0" AnchorPane.rightAnchor="420.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton fx:id="remove" layoutX="408.0" layoutY="366.0" onAction="#removeSymptom" prefHeight="30.0" prefWidth="72.0" styleClass="btn" text="&lt;&lt;" AnchorPane.leftAnchor="408.0" AnchorPane.rightAnchor="420.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton fx:id="next" layoutX="766.0" layoutY="653.0" onAction="#nextWindow" prefHeight="30.0" prefWidth="94.0" styleClass="btn" text="Dalej &gt;&gt;">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <Label alignment="CENTER" layoutX="102.0" prefHeight="30.0" prefWidth="658.0" text="OnkoTest- wprowadź objawy" textFill="#a1a1a1">
+         <font>
+            <Font name="Segoe UI Semilight" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

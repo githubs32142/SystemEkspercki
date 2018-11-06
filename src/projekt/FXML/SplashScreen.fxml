@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0"
+            prefWidth="493.0" style="-fx-background-color: #2b579a;" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.SplashController">
+    <children>
+        <ImageView fitHeight="18.0" fitWidth="264.0" layoutX="125.0" layoutY="164.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../Resource/294.GIF"/>
+            </image>
+        </ImageView>
+        <Label layoutX="51.0" layoutY="21.0" prefHeight="58.0" prefWidth="391.0" text="System do diagnozownia"
+               textAlignment="CENTER" textFill="#ededed" textOverrun="CLIP">
+            <font>
+                <Font name="Segoe UI Italic" size="36.0"/>
+            </font>
+        </Label>
+        <Label layoutX="177.0" layoutY="125.0" prefHeight="39.0" prefWidth="116.0" text="Trwa ładowanie..."
+               textFill="#ededed" textOverrun="CLIP">
+            <font>
+                <Font name="Segoe UI Italic" size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="223.0" prefHeight="28.0" prefWidth="180.0" text="Copyright by PWSTE"
+               textFill="#ededed" textOverrun="CLIP">
+            <font>
+                <Font name="Segoe UI Italic" size="12.0"/>
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="251.0" prefHeight="28.0" prefWidth="363.0"
+               text="Państwowa Wyższa Szkoła Techniczno-Ekonomiczna w Jarosławiu" textFill="#ededed" textOverrun="CLIP">
+            <font>
+                <Font name="Segoe UI Italic" size="12.0"/>
+            </font>
+        </Label>
+        <Label layoutX="57.0" layoutY="69.0" prefHeight="50.0" prefWidth="379.0" text="chorób nowotworowych"
+               textAlignment="CENTER" textFill="#ededed" textOverrun="CLIP">
+            <font>
+                <Font name="Segoe UI Italic" size="36.0"/>
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="279.0" prefHeight="28.0" prefWidth="180.0" text="Created by Andrzej Kierepka"
+               textFill="#ededed" textOverrun="CLIP">
+            <font>
+                <Font name="Segoe UI Italic" size="12.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

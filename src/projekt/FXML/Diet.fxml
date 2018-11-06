@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0"
+      prefWidth="916.0" styleClass="background" stylesheets="@../CSS/Metro-UI.css"
+      xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="projekt.Controller.DietTestController">
+    <children>
+        <Label fx:id="question" prefHeight="60.0" prefWidth="1000.0" styleClass="lbl" text="Label"/>
+        <RadioButton fx:id="answer1" mnemonicParsing="false" onAction="#answer1Action" prefHeight="39.0"
+                     prefWidth="318.0" selected="true" text="RadioButton">
+            <font>
+                <Font name="Times New Roman Italic" size="20.0"/>
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="tg"/>
+            </toggleGroup>
+            <VBox.margin>
+                <Insets left="10.0"/>
+            </VBox.margin>
+        </RadioButton>
+        <RadioButton fx:id="answer2" mnemonicParsing="false" onAction="#answer2Action" prefHeight="39.0"
+                     prefWidth="307.0" styleClass="background" text="RadioButton" toggleGroup="$tg">
+            <font>
+                <Font name="Times New Roman Italic" size="20.0"/>
+            </font>
+            <VBox.margin>
+                <Insets left="10.0"/>
+            </VBox.margin>
+        </RadioButton>
+        <RadioButton fx:id="answer3" mnemonicParsing="false" onAction="#answer3Action" prefHeight="40.0"
+                     prefWidth="309.0" styleClass="background" text="RadioButton" toggleGroup="$tg">
+            <font>
+                <Font name="Times New Roman Italic" size="20.0"/>
+            </font>
+            <VBox.margin>
+                <Insets left="10.0"/>
+            </VBox.margin>
+        </RadioButton>
+        <RadioButton fx:id="answer4" mnemonicParsing="false" onAction="#answer4Action" prefHeight="40.0"
+                     prefWidth="337.0" styleClass="background" text="RadioButton" toggleGroup="$tg">
+            <font>
+                <Font name="Times New Roman Italic" size="20.0"/>
+            </font>
+            <VBox.margin>
+                <Insets left="10.0"/>
+            </VBox.margin>
+        </RadioButton>
+        <Pane prefHeight="45.0" prefWidth="499.0">
+            <children>
+                <Button fx:id="next" layoutX="751.0" layoutY="2.0" mnemonicParsing="false" onAction="#next"
+                        prefHeight="32.0" prefWidth="117.0" styleClass="btn" text="Dalej &gt;"/>
+                <Button layoutX="636.0" layoutY="2.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0"
+                        prefWidth="99.0" styleClass="btn" text="&lt; Wstecz"/>
+            </children>
+        </Pane>
+    </children>
+</VBox>

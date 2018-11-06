@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="650.0" prefWidth="900.0" styleClass="background" stylesheets="@../CSS/dignose.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.DiagnoseWindowController">
+    <children>
+        <HBox layoutX="763.0" layoutY="2.0" prefHeight="0.0" prefWidth="140.0" stylesheets="@../CSS/winDec.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#fullScreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-fullscreen">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#minimalizeSscreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-minimize">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#maximalizeSscreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-maximize">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#closeeSscreen" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-close">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </HBox>
+        <Label alignment="CENTER" layoutX="100.0" layoutY="-1.0" prefHeight="25.0" prefWidth="667.0" text="OnkoTest- wyniki diagnozy:" textFill="#a1a1a1" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="-1.0">
+            <font>
+                <Font name="Segoe UI Semilight" size="14.0" />
+            </font>
+        </Label>
+        <WebView fx:id="webView" layoutY="27.0" prefHeight="624.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <JFXHamburger fx:id="hamburger" layoutX="846.0" layoutY="39.0" styleClass="background">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXHamburger>
+        <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" prefHeight="650.0" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane fx:id="box" prefHeight="650.0" prefWidth="85.0" style="-fx-background-color: #2b579a;">
+                    <children>
+                        <VBox layoutY="135.0" prefHeight="224.0" prefWidth="144.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#saveToPdf" prefHeight="47.0" prefWidth="144.0" styleClass="btn" text="Zapisz do pdf">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#newDiagnose" prefHeight="44.0" prefWidth="144.0" styleClass="btn" text="Nowa diagnoza">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                        <Button mnemonicParsing="false" onAction="#newAboutWindow" prefHeight="44.0" prefWidth="144.0" styleClass="btn" text="O autorze">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </JFXDrawer>
+    </children>
+</AnchorPane>

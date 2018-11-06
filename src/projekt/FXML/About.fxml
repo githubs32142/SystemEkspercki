@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="609.0" style="-fx-background-color: #2c62b5;" stylesheets="@../CSS/login.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.AboutController">
+    <children>
+        <Label layoutX="539.0" layoutY="-2.0" onMouseClicked="#mouseClosed" text="X">
+            <font>
+                <Font name="Segoe UI Semibold" size="27.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+      <VBox layoutX="33.0" layoutY="61.0" prefHeight="360.0" prefWidth="545.0">
+         <children>
+            <HBox prefHeight="72.0" prefWidth="545.0">
+               <children>
+                  <Label prefHeight="72.0" prefWidth="547.0" text="Autor : Andrzej Kierepka (andrzejkierepka@gmail.com)">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="72.0" prefWidth="547.0" text="Nazwa progamu: OnkoTest">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="51.0" prefWidth="545.0" text="Linki:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="34.0" prefWidth="545.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Hyperlink fx:id="hl1" onAction="#open1" text="https://pl.wikipedia.org/wiki/Kwestionariusz_Fagerstr%C3%B6ma" />
+               </graphic>
+            </Label>
+            <Label prefHeight="34.0" prefWidth="545.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Hyperlink fx:id="hl2" onAction="#open2" text="http://www.centrumdobrejterapii.pl/materialy/czy-jestes-uzalezniony-od-alkoholu-test-audit/" />
+               </graphic>
+            </Label>
+            <Label prefHeight="34.0" prefWidth="545.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Hyperlink fx:id="hl3" onAction="#open3" prefHeight="23.0" prefWidth="505.0" text="https://www.zwrotnikraka.pl/skutki-uboczne-radioterapii/" />
+               </graphic>
+            </Label>
+            <Label prefHeight="34.0" prefWidth="545.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Hyperlink fx:id="hl4" onAction="#open4" prefHeight="23.0" prefWidth="505.0" text="http://www.forum-onkologiczne.com.pl/forum/nowotwory-pluca-i-oplucnej-vf4.htm?sid=de8a9c363b3c0b57e3ccdf93b387b83b" />
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

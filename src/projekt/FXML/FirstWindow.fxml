@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="609.0" style="-fx-background-color: #2c62b5;" stylesheets="@../CSS/login.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.FirstWindowController">
+    <children>
+        <Label fx:id="toplbl" layoutX="186.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="74.0" prefWidth="237.0" text="Wprowadź dane:">
+            <font>
+                <Font name="Segoe UI Semibold Italic" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="539.0" layoutY="-2.0" onMouseClicked="#mouseClosed" text="X">
+            <font>
+                <Font name="Segoe UI Semibold" size="27.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <VBox layoutX="93.0" layoutY="81.0" prefHeight="306.0" prefWidth="347.0" stylesheets="@../CSS/login.css">
+            <children>
+                <HBox prefHeight="31.0" prefWidth="218.0">
+                    <children>
+                        <Label fx:id="lblname" text="Imię:">
+                            <font>
+                                <Font name="Segoe UI Semilight Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="name" prefHeight="30.0" prefWidth="175.0" promptText="Podaj imię">
+                            <HBox.margin>
+                                <Insets left="48.0" top="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="42.0" prefWidth="218.0">
+                    <children>
+                        <Label fx:id="lblsurname" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="138.0" text="Nazwisko:">
+                            <font>
+                                <Font name="Segoe UI Semilight Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="surname" prefHeight="30.0" prefWidth="175.0" promptText="Podaj nazwisko">
+                            <HBox.margin>
+                                <Insets top="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="42.0" prefWidth="383.0">
+                    <children>
+                        <Label fx:id="lblweight" text="Waga:">
+                            <font>
+                                <Font name="Segoe UI Semilight Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="weight" prefHeight="30.0" prefWidth="175.0" promptText="Podaj wagę w kg">
+                            <HBox.margin>
+                                <Insets left="34.0" top="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="39.0" prefWidth="218.0">
+                    <children>
+                        <Label fx:id="lbllheight" text="Wzrost:">
+                            <font>
+                                <Font name="Segoe UI Semilight Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="height" prefHeight="30.0" prefWidth="175.0" promptText="Podaj wzrost w cm">
+                            <HBox.margin>
+                                <Insets left="24.0" top="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="34.0" prefWidth="218.0">
+                    <children>
+                        <Label fx:id="lblage" text="Wiek:">
+                            <font>
+                                <Font name="Segoe UI Semilight Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="age" prefHeight="30.0" prefWidth="175.0" promptText="Podaj wiek w latach">
+                            <HBox.margin>
+                                <Insets left="44.0" top="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="82.0" prefWidth="252.0">
+                    <children>
+                        <Label fx:id="lblsex" text="Płeć:">
+                            <font>
+                                <Font name="Segoe UI Semilight Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox fx:id="sex" prefHeight="30.0" prefWidth="175.0">
+                            <HBox.margin>
+                                <Insets left="51.0" top="5.0" />
+                            </HBox.margin>
+                        </ChoiceBox>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <CheckBox fx:id="eMail" mnemonicParsing="false" onAction="#eMailClicked" prefHeight="48.0" prefWidth="271.0" text="E-mail">
+                            <HBox.margin>
+                                <Insets left="117.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Segoe UI Semibold" size="22.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </CheckBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <JFXButton fx:id="next" layoutX="319.0" layoutY="408.0" onAction="#nextWindow" ripplerFill="BLACK" text="Dalej &gt;&gt;">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton fx:id="close" layoutX="114.0" layoutY="408.0" onAction="#close" text="Zamknij">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>

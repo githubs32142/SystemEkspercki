@@ -1,0 +1,88 @@
+﻿Brat-Rak płuc;brat_pluc:
+Brat-Rak jelita grubrgo;brat_jelito:
+Brat-Rak piersi;brat_piersi:
+Brat-Rak jąder;brat_jader:
+Brat-Rak gruczołu krokowego;brat_gru_krok:
+Brat-Guz mózgu;brat_mozg:
+Brat-Rak szyjki macicy;brat_syjki_macic:
+Brat-Rak trzustki;brat_trzustka:
+Brat-Rak żołądka;brat_zoladka:
+Brat-Rak krtani;brat_krtani:
+Brat-Rak jajnika;brat_jajnik:
+Siostra-Rak płuc;siostra_pluc:
+Siostra-Rak jelita grubrgo;siostra_jelito:
+Siostra-Rak piersi;siostra_piersi:
+Siostra-Rak jąder;siostra_jader:
+Siostra-Rak gruczołu krokowego;siostra_gru_krok:
+Siostra-Guz mózgu;siostra_mozg:
+Siostra-Rak szyjki macicy;siostra_syjki_macic:
+Siostra-Rak trzustki;siostra_trzustka:
+Siostra-Rak żołądka;siostra_zoladka:
+Siostra-Rak krtani;siostra_krtani:
+Siostra-Rak jajnika;siostra_jajnik:
+Ojciec-Rak płuc;ojciec_pluc:
+Ojciec-Rak jelita grubrgo;ojciec_jelito:
+Ojciec-Rak piersi;ojciec_piersi:
+Ojciec-Rak jąder;ojciec_jader:
+Ojciec-Rak gruczołu krokowego;ojciec_gru_krok:
+Ojciec-Guz mózgu;ojciec_mozg:
+Ojciec-Rak szyjki macicy;ojciec_syjki_macic:
+Ojciec-Rak trzustki;ojciec_trzustka:
+Ojciec-Rak żołądka;ojciec_zoladka:
+Ojciec-Rak krtani;ojciec_krtani:
+Ojciec-Rak jajnika;ojciec_jajnik:
+Matka-Rak płuc;matka_pluc:
+Matka-Rak jelita grubrgo;matka_jelito:
+Matka-Rak piersi;matka_piersi:
+Matka-Rak jąder;matka_jader:
+Matka-Rak gruczołu krokowego;matka_gru_krok:
+Matka-Guz mózgu;matka_mozg:
+Matka-Rak szyjki macicy;matka_syjki_macic:
+Matka-Rak trzustki;matka_trzustka:
+Matka-Rak żołądka;matka_zoladka:
+Matka-Rak krtani;matka_krtani:
+Matka-Rak jajnika;matka_jajnik:
+Dziadek-Rak płuc;dziadek_pluc:
+Dziadek-Rak jelita grubrgo;dziadek_jelito:
+Dziadek-Rak piersi;dziadek_piersi:
+Dziadek-Rak jąder;dziadek_jader:
+Dziadek-Rak gruczołu krokowego;dziadek_gru_krok:
+Dziadek-Guz mózgu;dziadek_mozg:
+Dziadek-Rak szyjki macicy;dziadek_syjki_macic:
+Dziadek-Rak trzustki;dziadek_trzustka:
+Dziadek-Rak żołądka;dziadek_zoladka:
+Dziadek-Rak krtani;dziadek_krtani:
+Dziadek-Rak jajnika;dziadek_jajnik:
+Babcia-Rak płuc;babcia_pluc:
+Babcia-Rak jelita grubrgo;babcia_jelito:
+Babcia-Rak piersi;babcia_piersi:
+Babcia-Rak jąder;babcia_jader:
+Babcia-Rak gruczołu krokowego;babcia_gru_krok:
+Babcia-Guz mózgu;babcia_mozg:
+Babcia-Rak szyjki macicy;babcia_syjki_macic:
+Babcia-Rak trzustki;babcia_trzustka:
+Babcia-Rak żołądka;babcia_zoladka:
+Babcia-Rak krtani;babcia_krtani:
+Babcia-Rak jajnika;babcia_jajnik:
+Wujek-Rak płuc;wujek_pluc:
+Wujek-Rak jelita grubrgo;wujek_jelito:
+Wujek-Rak piersi;wujek_piersi:
+Wujek-Rak jąder;wujek_jader:
+Wujek-Rak gruczołu krokowego;wujek_gru_krok:
+Wujek-Guz mózgu;wujek_mozg:
+Wujek-Rak szyjki macicy;wujek_syjki_macic:
+Wujek-Rak trzustki;wujek_trzustka:
+Wujek-Rak żołądka;wujek_zoladka:
+Wujek-Rak krtani;wujek_krtani:
+Wujek-Rak jajnika;wujek_jajnik:
+Ciotka-Rak płuc;ciotka_pluc:
+Ciotka-Rak jelita grubrgo;ciotka_jelito:
+Ciotka-Rak piersi;ciotka_piersi:
+Ciotka-Rak jąder;ciotka_jader:
+Ciotka-Rak gruczołu krokowego;ciotka_gru_krok:
+Ciotka-Guz mózgu;ciotka_mozg:
+Ciotka-Rak szyjki macicy;ciotka_syjki_macic:
+Ciotka-Rak trzustki;ciotka_trzustka:
+Ciotka-Rak żołądka;ciotka_zoladka:
+Ciotka-Rak krtani;ciotka_krtani:
+Ciotka-Rak jajnika;ciotka_jajnik:

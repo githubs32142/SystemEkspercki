@@ -1,4 +1,4 @@
-package projekt.Class;
+package projekt.Model;
 
 /**
  ** Klasa, która emiyuje osobę.

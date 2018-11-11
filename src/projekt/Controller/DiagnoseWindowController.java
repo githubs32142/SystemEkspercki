@@ -30,8 +30,9 @@ import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import projekt.Class.CancerFamilly;
-import projekt.Class.Person;
+import projekt.Model.CancerFamilly;
+import projekt.Model.Person;
+import projekt.Propertis.FXMLConfigPath;
 
 /**
  * FXML Controller class
@@ -218,7 +219,7 @@ public class DiagnoseWindowController implements Initializable {
 
         if (fileSel != null) {
             Document document = new Document();
-            projekt.Class.SaveToPDF.createPdf(fileSel);
+            projekt.Model.SaveToPDF.createPdf(fileSel);
         }
     }
 
@@ -241,7 +242,7 @@ public class DiagnoseWindowController implements Initializable {
         stage = (Stage) ((Node) (event.getSource())).getScene().getWindow();
         stage.close();
         Stage primaryStage= new Stage();
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/FirstWindow.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.FIRST_WINDOW_FXML));
                 Parent parent = null;
                 try {
                     parent = load.load();
@@ -257,7 +258,7 @@ public class DiagnoseWindowController implements Initializable {
     @FXML
     private void newAboutWindow(ActionEvent event) {
         Stage primaryStage= new Stage();
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/About.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.ABOUT_WINDOW_FXML));
                 Parent parent = null;
                 try {
                     parent = load.load();

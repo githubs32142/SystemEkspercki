@@ -1,4 +1,4 @@
-package projekt.Class;
+package projekt.Model;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

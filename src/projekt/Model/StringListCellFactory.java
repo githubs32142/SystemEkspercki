@@ -1,4 +1,4 @@
-package projekt.Class;
+package projekt.Model;
 
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;

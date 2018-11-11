@@ -36,8 +36,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import projekt.Class.CancerFamilly;
-import projekt.Class.Person;
+import projekt.Model.CancerFamilly;
+import projekt.Model.Person;
+import projekt.Propertis.FXMLConfigPath;
 
 /**
  * FXML Controller class
@@ -415,7 +416,7 @@ public class CancerInFamillyController implements Initializable {
      */
     @FXML
     private void nextWindow(ActionEvent event) throws IOException {
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/SummaryWindow.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.SUMMARY_WINDOW_FXML));
         SummaryWindowController cnt = new SummaryWindowController();
         Parent parent = load.load();
         cnt = load.getController();
@@ -450,7 +451,7 @@ public class CancerInFamillyController implements Initializable {
     @FXML
     private void undoClick(ActionEvent event) {
         try {
-            FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/SymptomWindow.fxml"));
+            FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.SYMPTOMS_WINDOW_FXML));
             SymptomWindowController cnt = new SymptomWindowController();
             Parent parent = load.load();
             cnt = load.getController();

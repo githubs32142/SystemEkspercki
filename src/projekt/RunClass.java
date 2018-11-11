@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import projekt.Propertis.FXMLConfigPath;
 
 /**
  ** Klasa która powoduje uruchomienie programu
@@ -28,16 +29,6 @@ public class RunClass extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         loadSplash(primaryStage);
-        /*
-        //FXMLLoader load = new FXMLLoader(this.getClass().getResource("FXML/SummaryWindow.fxml"));
-        //FXMLLoader load = new FXMLLoader(this.getClass().getResource("FXML/Fibre.fxml"));
-        Parent parent= load.load();
-        Scene scene = new Scene(parent);
-        primaryStage.setScene(scene);
-        primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setResizable(false);
-        primaryStage.show();
-         */
     }
 
     /**
@@ -58,7 +49,7 @@ public class RunClass extends Application {
      * @throws IOException wyjątek błędnego wejścia/wyjścia.
      */
     public void loadSplash(Stage primaryStage) throws IOException {
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("FXML/SplashScreen.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.SPLASH_SCREEN_FXML));
         Parent parent = load.load();
         Scene scene = new Scene(parent);
         FadeTransition fin = new FadeTransition(Duration.seconds(10), parent);
@@ -73,7 +64,7 @@ public class RunClass extends Application {
         fin.setOnFinished(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                FXMLLoader load = new FXMLLoader(this.getClass().getResource("FXML/FirstWindow.fxml"));
+                FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.FIRST_WINDOW_FXML));
                 Parent parent = null;
                 try {
                     parent = load.load();

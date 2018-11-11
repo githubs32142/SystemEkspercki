@@ -42,9 +42,10 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import projekt.Class.EqualString;
-import projekt.Class.Person;
+import projekt.Model.EqualString;
+import projekt.Model.Person;
 import projekt.Propertis.ConfigPath;
+import projekt.Propertis.FXMLConfigPath;
 
 /**
  * FXML Controller class
@@ -96,7 +97,7 @@ public class SymptomWindowController implements Initializable {
         rec2 = Screen.getPrimary().getVisualBounds();
         w = 0.1;
         h = 0.1;
-        readData(ConfigPath.getSymptomsList());
+        readData(ConfigPath.SYMPTOMS_LIST);
         Collections.sort(data, (String t, String t1) -> t1.compareTo(t)); 
         symptoms.setItems(data);
         drawer.setSidePane(box);
@@ -145,7 +146,7 @@ public class SymptomWindowController implements Initializable {
      */
     @FXML
     private void nextWindow(ActionEvent event) throws IOException {
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/CancerInFamilly.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.CANCER_IN_FAMILLY_WINDOW_FXML));
         CancerInFamillyController cnt = new CancerInFamillyController();
         Parent parent = load.load();
         cnt = load.getController();
@@ -488,7 +489,7 @@ public class SymptomWindowController implements Initializable {
     @FXML
     private void undoClick(ActionEvent event) {
         try {
-            FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/FactorWindow.fxml"));
+            FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.FACTOR_WINDOW_FXML));
             FactorWindowController cnt = new FactorWindowController();
             Parent parent = load.load();
             cnt = load.getController();

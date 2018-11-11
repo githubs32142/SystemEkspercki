@@ -1,4 +1,4 @@
-package projekt.Class;
+package projekt.Model;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -14,7 +14,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.StringTokenizer;
@@ -48,11 +47,12 @@ import javafx.scene.web.WebView;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import projekt.Class.EqualString;
-import projekt.Class.Factor;
-import projekt.Class.OperationFactor;
-import projekt.Class.Person;
+import projekt.Model.EqualString;
+import projekt.Model.Factor;
+import projekt.Model.OperationFactor;
+import projekt.Model.Person;
 import projekt.Propertis.ConfigPath;
+import projekt.Propertis.FXMLConfigPath;
 
 /**
  * Kontroler do ppliku FXML
@@ -134,7 +134,7 @@ public class FactorWindowController implements Initializable {
         OperationFactor.initFactor(fact);
         try {
             // readData("");
-            readData(ConfigPath.getFactorList());
+            readData(ConfigPath.FACTOR_LIST);
         } catch (IOException ex) {
             showOutputMessage("Błąd! Brak pliku konfiguracyjnego!\nZłoś się do twórcy programu");
             System.exit(1);
@@ -353,7 +353,7 @@ public class FactorWindowController implements Initializable {
     @FXML
     private void nextWindow(ActionEvent event) {
         try {
-            FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/SymptomWindow.fxml"));
+            FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.SYMPTOMS_WINDOW_FXML));
             SymptomWindowController cnt = new SymptomWindowController();
             Parent parent = load.load();
             cnt = load.getController();
@@ -660,7 +660,7 @@ public class FactorWindowController implements Initializable {
     private void undoClick(ActionEvent event) {
         try {
 
-            FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/FirstWindow.fxml"));
+            FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.FIRST_WINDOW_FXML));
             FirstWindowController cnt = new FirstWindowController();
             Parent parent = load.load();
             cnt = load.getController();

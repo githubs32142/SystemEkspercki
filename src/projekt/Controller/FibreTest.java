@@ -27,7 +27,7 @@ import javafx.stage.Stage;
 import jess.JessException;
 import jess.Rete;
 import org.controlsfx.control.Notifications;
-import projekt.Class.ListFibre;
+import projekt.Model.ListFibre;
 
 /**
  * FXML Controller class

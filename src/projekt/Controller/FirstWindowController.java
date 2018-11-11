@@ -25,8 +25,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import org.controlsfx.control.Notifications;
-import projekt.Class.CheckReg;
-import projekt.Class.Person;
+import projekt.Model.CheckReg;
+import projekt.Model.Person;
+import projekt.Propertis.FXMLConfigPath;
 import projekt.ToolTip.TTFirstWindnow;
 import projekt.animations.FadeInLeftTransition;
 import projekt.animations.FadeInRightTransition;
@@ -201,7 +202,7 @@ public class FirstWindowController implements Initializable {
 
                     Person p = new Person(surname.getText(), w, a, sex.getValue(), h);
                     if (CheckReg.checkEmail(surname.getText())) {
-                        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/FactorWindow.fxml"));
+                        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.FACTOR_WINDOW_FXML));
                         FactorWindowController cnt = new FactorWindowController(p);
                         Parent parent = load.load();
                         cnt = load.getController();
@@ -268,7 +269,7 @@ public class FirstWindowController implements Initializable {
                         }
 
                         Person p = new Person(name.getText(), surname.getText(), w, a, sex.getValue(), h);
-                        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/FactorWindow.fxml"));
+                        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.FACTOR_WINDOW_FXML));
                         FactorWindowController cnt = new FactorWindowController(p);
                         Parent parent = load.load();
                         cnt = load.getController();

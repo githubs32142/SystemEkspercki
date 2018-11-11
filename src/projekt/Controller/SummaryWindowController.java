@@ -45,13 +45,14 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import jess.JessException;
-import projekt.Class.CancerFamilly;
-import projekt.Class.DiagnozeHTML;
-import projekt.Class.FCList;
-import projekt.Class.JessEngine;
-import projekt.Class.TList;
-import projekt.Class.Person;
+import projekt.Model.CancerFamilly;
+import projekt.Model.DiagnozeHTML;
+import projekt.Model.FCList;
+import projekt.Model.JessEngine;
+import projekt.Model.TList;
+import projekt.Model.Person;
 import projekt.Propertis.ConfigPath;
+import projekt.Propertis.FXMLConfigPath;
 
 /**
  * FXML Controller class
@@ -163,7 +164,7 @@ public class SummaryWindowController implements Initializable {
     @FXML
     private void nextWindow(ActionEvent event) throws IOException {
         String s = "";
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/DiagnoseWindow.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.DIAGNOSE_WINDOW_FXML));
         DiagnoseWindowController cnt = new DiagnoseWindowController();
         Parent parent = load.load();
         cnt = load.getController();
@@ -176,7 +177,7 @@ public class SummaryWindowController implements Initializable {
         //view.getEngine().load(urlFile.toExternalForm());
         String str = "";
         str = "( assert ( Person (age " + person.getAge() + ")))";
-        TList f = new TList(ConfigPath.getFactorWithAlians());
+        TList f = new TList(ConfigPath.FACTOR_WITH_ALIANS);
         f.makeOperation(dataFactors);
         TList f2 = new TList(ConfigPath.getSymptomsWithAlians());
         f2.makeOperation(dataSymptoms);
@@ -297,7 +298,7 @@ public class SummaryWindowController implements Initializable {
      */
     @FXML
     private void backToFactor(ActionEvent event) throws IOException {
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/FactorWindow.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.FACTOR_WINDOW_FXML));
         FactorWindowController cnt = new FactorWindowController();
         Parent parent = load.load();
         cnt = load.getController();
@@ -331,7 +332,7 @@ public class SummaryWindowController implements Initializable {
      */
     @FXML
     private void backToSummary(ActionEvent event) throws IOException {
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/SymptomWindow.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.SYMPTOMS_WINDOW_FXML));
         SymptomWindowController cnt = new SymptomWindowController();
         Parent parent = load.load();
         cnt = load.getController();
@@ -385,7 +386,7 @@ public class SummaryWindowController implements Initializable {
      */
     @FXML
     private void undoClick(ActionEvent event) throws IOException {
-        FXMLLoader load = new FXMLLoader(this.getClass().getResource("/projekt/FXML/CancerInFamilly.fxml"));
+        FXMLLoader load = new FXMLLoader(this.getClass().getResource(FXMLConfigPath.CANCER_IN_FAMILLY_WINDOW_FXML));
         CancerInFamillyController cnt = new CancerInFamillyController();
         Parent parent = load.load();
         cnt = load.getController();

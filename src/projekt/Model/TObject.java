@@ -3,7 +3,7 @@
  *
  * @author Andrzej Kierepka
  */
-package projekt.Class;
+package projekt.Model;
 
 public class TObject {
 

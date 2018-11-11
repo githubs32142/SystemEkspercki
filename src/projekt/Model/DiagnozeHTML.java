@@ -1,4 +1,4 @@
-package projekt.Class;
+package projekt.Model;
 
 import java.util.ArrayList;
 import java.util.List;

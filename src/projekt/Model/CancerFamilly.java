@@ -1,4 +1,4 @@
-package projekt.Class;
+package projekt.Model;
 
 import javafx.beans.property.SimpleStringProperty;
 

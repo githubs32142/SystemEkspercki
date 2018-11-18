@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: ;" styleClass="background" stylesheets="@../CSS/Fact.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.FactorWindowController">
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: ;" styleClass="background" stylesheets="@../CSS/Fact.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.MainWindow.FactorWindowController">
     <children>
         <Label layoutX="99.0" layoutY="333.0" prefHeight="40.0" prefWidth="263.0" styleClass="lbl2" text="Czynniki ryzyka:" AnchorPane.bottomAnchor="314.0" AnchorPane.leftAnchor="99.0" />
         <Label layoutX="580.0" layoutY="333.0" prefHeight="40.0" prefWidth="210.0" styleClass="lbl2" text="Wybrane czynniki:" AnchorPane.bottomAnchor="314.0" AnchorPane.rightAnchor="110.0" />

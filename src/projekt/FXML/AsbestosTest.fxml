@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="900.0" styleClass="background" stylesheets="@../CSS/Fact.css"
             xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="projekt.Controller.AsbestosTestController">
+            fx:controller="projekt.Controller.Test.AsbestosTestController">
     <children>
         <Label layoutX="141.0" layoutY="55.0" prefHeight="40.0" prefWidth="263.0" styleClass="lbl" text="Zawody:"
                AnchorPane.bottomAnchor="545.0" AnchorPane.leftAnchor="141.0" AnchorPane.topAnchor="55.0"/>

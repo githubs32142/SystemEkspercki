@@ -1,10 +1,12 @@
 <component name="libraryTable">
   <library name="Lib">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/src/projekt/Lib" />
+      <root url="file://$PROJECT_DIR$/src/resources/Lib" />
+      <root url="file://$PROJECT_DIR$/src/resources/Lib/hibernate" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="file://$PROJECT_DIR$/src/projekt/Lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/src/resources/Lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/src/resources/Lib/hibernate" recursive="false" />
   </library>
 </component>

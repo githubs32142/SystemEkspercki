@@ -2,7 +2,7 @@ package projekt.ToolTip;
 
 import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
-import projekt.Controller.FirstWindowController;
+import projekt.Controller.MainWindow.FirstWindowController;
 
 public class TTFirstWindnow {
     

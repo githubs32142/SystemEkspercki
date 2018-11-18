@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="root" prefHeight="650.0" prefWidth="900.0" styleClass="background" stylesheets="@../CSS/Fact.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.SymptomWindowController">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="650.0" prefWidth="900.0" styleClass="background" stylesheets="@../CSS/Fact.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.MainWindow.SymptomWindowController">
     <children>
         <JFXListView fx:id="symptoms" layoutX="72.0" layoutY="144.0" onDragDetected="#symptomsDragDetected" onDragDropped="#symptomsDragDropped" onDragEntered="#symptomsDragEntered" onDragExited="#symptomsDragExited" onDragOver="#symptomsDragOver" prefHeight="461.0" prefWidth="288.0" showTooltip="true" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="72.0">
             <cursor>

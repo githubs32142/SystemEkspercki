@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 import javafx.scene.control.Alert;
+import lombok.Getter;
 import projekt.Interface.*;
 
 /**
@@ -22,6 +23,7 @@ import projekt.Interface.*;
  */
 public class TList implements ReadData, Operation {
 
+    @Getter
     private List<TObject> listObject = new ArrayList<>();
 
     public TList() {
@@ -145,4 +147,5 @@ public class TList implements ReadData, Operation {
     public int size() {
         return listObject.size();
     }
+
 }

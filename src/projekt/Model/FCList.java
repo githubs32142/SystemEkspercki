@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 import javafx.scene.control.Alert;
+import lombok.Getter;
 import projekt.Interface.ReadData;
 
 /**
@@ -22,6 +23,7 @@ import projekt.Interface.ReadData;
  */
 public class FCList implements ReadData {
 
+    @Getter
     List<FCObject> list = new ArrayList<>();
 
     public FCList(String path) {

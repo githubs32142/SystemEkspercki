@@ -31,8 +31,7 @@ public class JessEngine {
         result = o.toString();
         engine.clear();
         if (result == null ? "" == null : result.equals("")) {
-            result = "No cancer was diagnosed"
-                    + " Please try again";
+            result = "No cancer was diagnosed. Please try again";
         }
         return result;
     }

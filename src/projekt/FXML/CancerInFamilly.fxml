@@ -20,7 +20,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="900.0" styleClass="background" stylesheets="@../CSS/Fact.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.CancerInFamillyController">
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="900.0" styleClass="background" stylesheets="@../CSS/Fact.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.Controller.MainWindow.CancerInFamillyController">
     <children>
         <Label layoutX="276.0" layoutY="43.0" styleClass="lbl" text="Nowotwór w rodzinie:" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="43.0" />
         <Label layoutX="316.0" layoutY="90.0" styleClass="lbl2" text="Nowotwór:" AnchorPane.leftAnchor="316.0" />

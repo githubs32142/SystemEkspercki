@@ -1,10 +1,15 @@
 package projekt.Model;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 /**
  ** Klasa, która emiyuje osobę.
  *
  * @author Andrzej Kierepka
  */
+@ToString
+@EqualsAndHashCode
 public class Person {
 
     private String name;
@@ -153,10 +158,6 @@ public class Person {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return name.toString(); //To change body of generated methods, choose Tools | Templates.
-    }
 
     /**
      * Metoda, która zwraca adres e-mail

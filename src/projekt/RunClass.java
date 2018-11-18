@@ -11,7 +11,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import projekt.Propertis.FXMLConfigPath;
+import projekt.DB.Hibernate.HibernateInit;
+import projekt.Properties.FXMLConfigPath;
 
 /**
  ** Klasa która powoduje uruchomienie programu
@@ -57,6 +58,7 @@ public class RunClass extends Application {
         fin.setToValue(6);
         fin.setCycleCount(1);
         fin.play();
+        HibernateInit.initSesionFactory();
         primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setResizable(false);
